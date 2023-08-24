@@ -7,5 +7,12 @@ var config = {
     },
     "paths":{
         "vue":"Macademy_JsFun/js/vue"
+    },
+    "config":{
+        "mixins":{
+            "Magento_Ui/js/view/messages":{
+                "Macademy_JsFun/js/messages-mixin":true
+            }
+        }
     }
 }
