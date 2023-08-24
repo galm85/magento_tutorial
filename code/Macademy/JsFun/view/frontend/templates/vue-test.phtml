@@ -1,3 +1,8 @@
+<?php
+    /** @var \Macademy\JsFun\viewModel\Message $messageViewModel */
+    $messageViewModel = $block->getData('message_view_model');
+?>
+
 <!--<div id="vue-test" data-mage-init='{ "Macademy_JsFun/js/vue-test":{"message":"Another Test"} }'>-->
 <div id="vue-test">
     <h1>{{message}}</h1>
@@ -8,7 +13,7 @@
     {
         "#vue-test":{
             "Macademy_JsFun/js/vue-test":{
-                "message":"Declerative test"
+                "message":"<?= $messageViewModel->getMessage() ?>"
             }
         }
     }
