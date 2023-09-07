@@ -10,6 +10,6 @@ class Collection extends AbstractCollection
 
     protected function _construct()
     {
-       $this->_init(Faq::class,\Macademy\Minerva\Model\ResourceModel\Faq::class)
+       $this->_init(Faq::class,\Macademy\Minerva\Model\ResourceModel\Faq::class);
     }
 }
